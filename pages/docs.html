@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<body>
+    <div class="markdown">
+# Documents
+    </div>
+
+    <script src="lib/markdown.js"></script>
+    <script>
+        markdownDivs = document.getElementsByClassName("markdown")
+        for(let i = 0; i < markdownDivs.length; i++ ){
+            markdownDivs[i].innerHTML = markdown.toHTML(markdownDivs[i].innerHTML)
+        }
+    </script>
+</body>
+</html>
